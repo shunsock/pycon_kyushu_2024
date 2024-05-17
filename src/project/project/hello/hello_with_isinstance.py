@@ -1,4 +1,6 @@
-def hello_with_isinstance(name: str) -> str:
+def run(name: str) -> str:
     if isinstance(name, str) is False:
-        raise TypeError(f"input type of name must be str: {type(name)}")
+        raise TypeError(
+            f"nameはstr型であることが期待されています。入力値の型: {type(name)}"
+        )
     return f"Hello {name}"
