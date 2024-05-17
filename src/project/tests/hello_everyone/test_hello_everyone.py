@@ -1,7 +1,7 @@
 import pytest
 from typeguard import TypeCheckError
 
-from project.hello_everyone import Name, hello_everyone
+from project.hello_everyone.hello_everyone import Name, hello_everyone
 
 
 def test_name_validation() -> None:
