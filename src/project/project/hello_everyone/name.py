@@ -1,7 +1,4 @@
-from typing import List
-
 from pydantic import BaseModel, StrictStr, field_validator
-from typeguard import check_type
 
 
 class Name(BaseModel):
@@ -18,8 +15,3 @@ class Name(BaseModel):
             raise ValueError("Too long name")
 
         return value
-
-
-def hello_everyone(names: List[Name]) -> List[str]:
-    check_type(names, List[Name])
-    return [f"Hello {name.value}" for name in names]
