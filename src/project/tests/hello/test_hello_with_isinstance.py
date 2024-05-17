@@ -3,12 +3,12 @@ import pytest
 from project.hello.hello_with_isinstance import run
 
 
-def test_hello_with_bug() -> None:
+def test_hello_with_isinstance() -> None:
     response = run("Alice")
     assert response == "Hello Alice"
 
 
-def test_hello_does_not_raise_error_with_invalid_input() -> None:
+def test_hello_does_raise_error_with_invalid_input() -> None:
     """
     Pythonは動的型付け言語なので、型ヒントは実行時に評価されない。
     そのため、型ヒントがstr型であるにも関わらずint型を入力してもエラーが発生しない。
