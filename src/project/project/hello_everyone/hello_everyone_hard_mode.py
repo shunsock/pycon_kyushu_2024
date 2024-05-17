@@ -9,7 +9,7 @@ def run(names: List[str]) -> List[str]:
             )
         if len(name) == 0:
             raise ValueError("空の文字列は許可されていません")
-        if len(name) >= 100:
+        if len(name) > 100:
             raise ValueError("文字列は100文字以下である必要があります")
 
     return [f"Hello {name}" for name in names]
