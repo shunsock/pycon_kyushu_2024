@@ -7,7 +7,7 @@ def run(names: List[str]) -> List[str]:
             raise TypeError(
                 f"nameの型はstrが期待されています。入力値の型: {type(name)}"
             )
-        if len(name) == 0:
+        if len(name) < 1:
             raise ValueError("空の文字列は許可されていません")
         if len(name) > 100:
             raise ValueError("文字列は100文字以下である必要があります")
