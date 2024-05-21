@@ -2,6 +2,8 @@ from typing import List
 
 
 def run(names: List[str]) -> List[str]:
+    if isinstance(names, list) is False:
+        raise TypeError(f"namesの型はlistが期待されています。入力値の型: {type(names)}")
     for name in names:
         if isinstance(name, str) is False:
             raise TypeError(
