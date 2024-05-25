@@ -2,7 +2,7 @@ from .approved_pull_request import ApprovedPullRequest
 from .pull_request import PullRequest
 
 
-def approve_pull_request(pull_request: PullRequest) -> ApprovedPullRequest:
+def approve(pull_request: PullRequest) -> ApprovedPullRequest:
     """
     Pull Requestを承認する
 

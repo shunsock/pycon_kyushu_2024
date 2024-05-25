@@ -1,11 +1,10 @@
-from pydantic import BaseModel, StrictStr, field_validator
+class NameBuiltin:
+    value: str
 
+    def __init__(self, value: str):
+        if isinstance(value, str) is False:
+            raise TypeError("Name must be a string")
 
-class Name(BaseModel):
-    value: StrictStr
-
-    @field_validator("value")
-    def name_length(cls, value: str) -> str:
         empty_name = len(value) < 1
         if empty_name:
             raise ValueError("Empty name")
@@ -14,4 +13,4 @@ class Name(BaseModel):
         if too_long_name:
             raise ValueError("Too long name")
 
-        return value
+        self.value = value
