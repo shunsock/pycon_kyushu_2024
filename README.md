@@ -5,7 +5,8 @@ PyCon Kyushu 2024での講演「Pythonで作る堅牢なソフトウェア」の
 スライドとサンプルコードを含んでいます。
 
 ## Slide
-{スライドのリンクを貼る}
+![thumbnail](thumbnail/pycon2024.jpg)
+- [url](https://www.canva.com/design/DAGFgJC2l5w/Qtr6BYW_iV8GSXJIQnwORw/view?utm_content=DAGFgJC1l5w&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Prerequisites
 サンプルコードを実行するためには、以下のツールが必要です。
